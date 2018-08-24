@@ -53,7 +53,7 @@
 Distribution = "webos"
 
 # Supported MACHINE-s
-Machines = ['raspberrypi3','qemux86']
+Machines = ['raspberrypi3','qemux86','hammerhead']
 
 # github.com/openembedded repositories are read-only mirrors of the authoritative
 # repositories on git.openembedded.org
@@ -82,4 +82,8 @@ webos_layers = [
 ('meta-webos-raspberrypi',    51, 'git://github.com/webosce/meta-webosose.git',             '', ''),
 
 ('meta-webos-ros2',           52, 'git://github.com/webosce/meta-webosose.git',             '', ''),
+
+('meta-webos-android',        60, 'git://github.com/webOSCE-ports/meta-webos-android.git',  'branch=webosce', ''),
+('meta-android',              61, 'git://github.com/webOSCE-ports/meta-smartphone.git',     'branch=webosce,commit=402dcfa', ''),
+('meta-lg',                   62, 'git://github.com/webOSCE-ports/meta-smartphone.git',     'branch=webosce,commit=402dcfa', ''),
 ]
